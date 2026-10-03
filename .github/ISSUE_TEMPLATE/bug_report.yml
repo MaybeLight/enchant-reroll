@@ -1,0 +1,96 @@
+name: Bug report
+description: Report a reproducible bug or crash in Enchant Reroll
+title: ""
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug in Enchant Reroll.
+        Please fill out the form below as completely as possible.
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      description: Which Minecraft version are you using?
+      placeholder: e.g. 1.20.1
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Which version of Enchant Reroll are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      description: Which mod loader are you using?
+      options:
+        - Forge
+        - Fabric
+        - NeoForge
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: What happened, and how did it affect gameplay?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps required to reproduce the issue.
+      placeholder: |
+        1. Start the game
+        2. Open the reroll menu
+        3. Apply an enchantment
+        4. Observe the problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+      placeholder: Actual result
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste relevant logs, crash reports, screenshots, or videos if available.
+      placeholder: Attach details here or upload them with the issue.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other details that might help diagnose the issue?
+      placeholder: Mod list, world seed, config settings, etc.

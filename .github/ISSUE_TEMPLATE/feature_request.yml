@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest a new feature or improvement for Enchant Reroll
+title: ""
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature for Enchant Reroll.
+        Let us know what you want to see and why it would improve the mod.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature summary
+      description: What feature or improvement are you requesting?
+      placeholder: Describe the idea in a few sentences.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Why this would be useful
+      description: Explain the problem it solves or the gameplay benefit it provides.
+      placeholder: Describe the use case and expected value.
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or mockups
+      description: If relevant, include examples, screenshots, or rough mockups.
+      placeholder: Optional, but helpful.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional notes
+      description: Add any extra context, concerns, or implementation ideas.
+      placeholder: Optional
